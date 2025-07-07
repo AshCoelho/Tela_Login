@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
     header("Location: http://192.168.18.38:8080/$orgao.html");
     exit();
 } else {
-    echo "Dados inválidos. <a href='login.php'>Tente novamente</a>";
+    header("Location: error.php");
 }
 $conn->close();
 ?>
