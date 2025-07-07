@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #429fc9, #f4da13);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+.login-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    padding: 50px 40px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+img {
+    width: 150pxpx;
+    margin-bottom: 30px;
+}
+
+.login-box h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #287ea5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(66, 159, 201, 0.4);
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #46a5d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(51, 124, 163, 0.6);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(100, 201, 255, 0.885);
+}
+
+.error {
+    background-color: #ffe5e5;
+    color: #b00000;
+    border-left: 5px solid #b00000;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 40px 25px;
+    }
+
+    .login-box img {
+        width: 90px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+
+    input, select {
+        font-size: 0.95rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
